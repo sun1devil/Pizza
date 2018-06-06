@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/pizzas", function(req, res) {
-  cat.create(["name", "sleepy"], [req.body.name, req.body.sleepy], function(result) {
+  cat.create(["name", "gobbled"], [req.body.name, req.body.gobbled], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
   });
@@ -30,7 +30,7 @@ router.put("/api/pizzas/:id", function(req, res) {
 
   cat.update(
     {
-      sleepy: req.body.sleepy
+      gobbled: req.body.gobbled
     },
     condition,
     function(result) {
