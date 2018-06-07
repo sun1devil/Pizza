@@ -1,23 +1,27 @@
-<h1>Pizzas!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="/assets/css/pizza_style.css" type="text/css" />
+		<title>Hungry For Pizza!</title>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/models/pizza.js"></script>
+	</head>
 
-<h2>Pizzas that are not gobbled!</h2>
+
+
+<h1>Hungry for a Pizza?</h1>
+
+<h2>Pizzas Available:</h2>
 
 <ul>
-  {{#each Pizzas}}
-    {{#unless gobbled}}
-      {{> Pizzas/Pizza-block sleep=true}}
-    {{/unless}}
-  {{/each}}
+  {{#each Pizzas}} {{#unless gobbled}} {{> Pizzas/Pizza-block sleep=true}} {{/unless}} {{/each}}
 </ul>
 
-<h2>Pizzas that are gobbled!</h2>
+<h2>Pizzas that have been gobbled!</h2>
 
 <ul>
-  {{#each Pizzas}}
-    {{#if gobbled}}
-      {{> Pizzas/Pizza-block sleep=false}}
-    {{/if}}
-  {{/each}}
+  {{#each Pizzas}} {{#if gobbled}} {{> Pizzas/Pizza-block sleep=false}} {{/if}} {{/each}}
 </ul>
 
 <h2>Add a Pizza</h2>
@@ -29,10 +33,15 @@
   </div>
 
   <div class="form-group">
-    <label for="slee">gobbled?</label><br>
-    <input type="radio" name="gobbled" value="1" checked> gobbled!<br>
+    <label for="eaten">gobbled?</label>
+    <br>
+    <input type="radio" name="gobbled" value="1" checked> gobbled!
+    <br>
     <input type="radio" name="gobbled" value="0"> not gobbled
   </div>
 
-  <button type="submit">Add Pizza</button>
+  <button id="add-pizza" type="submit">Add Pizza</button>
+  <button id="eat-pizza" type="submit">Gobble Pizza</button>
+  <button id="gross-pizza" type="submit">Trash Pizza</button>
+  <button id="change-pizza" type="submit">Change Pizza</button>
 </form>

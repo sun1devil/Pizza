@@ -18,7 +18,7 @@ router.get("/", function(req, res) {
 
 router.post("/api/pizzas", function(req, res) {
   cat.create(["name", "gobbled"], [req.body.name, req.body.gobbled], function(result) {
-    // Send back the ID of the new quote
+    // Send back the ID of the new pizza
     res.json({ id: result.insertId });
   });
 });
