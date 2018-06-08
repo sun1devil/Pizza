@@ -1,9 +1,9 @@
 <li>
 	{{name}}
 
-	<button class="change-gobbled" data-id="{{this.id}}" data-neweat="{{gobbled}}">
+	<button id ="eat" class="change-gobbled" data-id="{{this.id}}" data-neweat="{{gobbled}}">
 		{{#if gobbled}}{{else}}EAT This PIZZA!{{/if}}
 	</button>
 
-	<button class="delete-pizza" data-id="{{this.id}}">TRASH EM!</button>
+	<button id ="delete" class="delete-pizza" data-id="{{this.id}}">TRASH EM!</button>
 </li>
