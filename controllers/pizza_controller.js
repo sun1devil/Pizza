@@ -30,7 +30,7 @@ router.put("/api/pizzas/:id", function(req, res) {
 
   pizza.update(
     {
-      gobbled: req.body.gobbled
+      gobbled: 1
     },
     condition,
     function(result) {
