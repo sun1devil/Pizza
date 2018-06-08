@@ -17,6 +17,11 @@ var pizza = {
     orm.update("pizzas", objColVals, condition, function(res) {
       cb(res);
     });
+  },
+  delete: function(condition, cb) {
+    orm.delete("pizzas", condition, function(res) {
+      cb(res);
+    });
   }
 };
 
@@ -24,33 +29,3 @@ var pizza = {
 module.exports = pizza;
 
 
-// // Buttons*****************
-// {/* <button id="add-pizza" type="submit">Add Pizza</button>
-//   <button id="eat-pizza" type="submit">Add Pizza</button>
-//   <button id="gross-pizza" type="submit">Add Pizza</button>
-//   <button id="change-pizza" type="submit">Add Pizza</button> */}
-
-  // $("#add-pizza").on("click", function(event) {
-  //   event.preventDefault();
-  
-  //   // make a newPizza
-  //   var newPizza = {
-  //     // name from name input
-  //     name: $("#name").val().trim(),
-      
-  //       };
-  
-  //   // send an AJAX POST-request with jQuery
-  //   $.post("/api/new", newPizza)
-  //     // on success, run this callback
-  //     .then(function(data) {
-  //       // log the data we found
-  //       console.log(data);
-  //       // tell the user we're adding a pizza an alert window
-  //       alert("Adding pizza...");
-  //     });
-  
-  //   // empty each input box by replacing the value with an empty string
-  //   $("#name").val("");
-      
-  // });
