@@ -2,7 +2,9 @@
 Project to utilize SQL and connect node JS to it usin routes, controller and ORM. Also utilized handlebars.  Deployed in Heroku as well as git hub.
 
 Links:
-
+https://github.com/sun1devil/Pizza
+https://sun1devil.github.io/Pizza/.
+https://dashboard.heroku.com/apps/boiling-brushlands-11799
 
 Getting Started 
 
