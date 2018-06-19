@@ -1,6 +1,6 @@
 header{
     size: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding: 30px;
     text-align: center;
     background-image: url(../img/flag.jpg);
@@ -20,7 +20,7 @@ body{
 .create-form{
     border: solid 2px;
     border-radius: 50%;
-    margin-top: 205px;
+    margin-top: 50px;
     background: lightgray;
     text-align: center;
     
@@ -34,7 +34,7 @@ body{
 li {
     padding: 5px;
     margin: 5px;
-    radius: 100%
+    border-radius: 100%;
     
   }
   
@@ -45,17 +45,17 @@ li {
   .create-update-form {
     padding: 5px;
     margin: 5px;
+  }
     
     #delete{
         src: url(../img.)
     }
 
-  }
 
   footer{
       width: 100%;
       position: absolute;
-      bottom: 40px;
+      bottom: 10px;
       size: 100px;
       margin-top: 200px;
       padding: 20px;
