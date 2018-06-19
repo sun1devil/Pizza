@@ -2,40 +2,35 @@
 Project to utilize SQL and connect node JS to it usin routes, controller and ORM. Also utilized handlebars.  Deployed in Heroku as well as git hub.
 
 Links:
-https://github.com/sun1devil/Pizza
-https://sun1devil.github.io/Pizza/.
-https://dashboard.heroku.com/apps/boiling-brushlands-11799
+- https://github.com/sun1devil/Pizza
 
-Getting Started 
+- https://sun1devil.github.io/Pizza/
+
+- https://boiling-brushlands-11799.herokuapp.com/
+
+## Getting Started 
 
 Prerequisites 
 node.js installed on your computer.
 
 The following NPM Packages
-
-express
-body-parse
-path
-mysql
-
-
-Built With 
-Javascript 
-JQuery
-SQL
-Node.js
-Bootstrap
+`npm i`
+- express
+- body-parse
+- path
+- mysql
+- express-handlebars
 
 
-NPM Packages
-express
-body-parse
-path
-express-handlebars
+### Built With 
+- Javascript 
+- JQuery
+- SQL
+- Node.js
+- Bootstrap
 
+## Author 
+*John McLeod*
 
-Author 
-John McLeod
-
-Acknowledgments 
+### Acknowledgments 
 Jerome, and the awesome TA's!
